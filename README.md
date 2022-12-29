@@ -1,3 +1,3 @@
 # Temporary storage
 
-## This is a place to quickly exchange files :)
+This is a place to quickly exchange files :)
