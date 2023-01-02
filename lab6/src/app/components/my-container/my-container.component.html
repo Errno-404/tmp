@@ -1,0 +1,16 @@
+<div class="parent">
+    <div class="div1"></div>
+    <div class="div2">SideBar</div>
+    <div class="div3"><router-outlet></router-outlet></div>
+    <div class="div4">Logo</div>
+    <div class="div5"><a routerLink="/home">Strona główna</a></div>
+    <div class="div6"><a routerLink="/trip-list">Lista wycieczek</a></div>
+    <div class="div7"><a [routerLink]="['/admin', {userObs}]">Admin Panel</a></div>
+    <div class="div8">Trip Manage</div>
+    <div *ngIf="authService.isLoggedIn" class="div9">{{(authService.userObs | async)?.username}}</div>
+    <div *ngIf="!authService.isLoggedIn" class="div9"><a routerLink="/sign-up">Register</a></div>
+
+    <div *ngIf="!authService.isLoggedIn" class="div10"><a routerLink="/sign-in">Login</a></div>
+    <div *ngIf="authService.isLoggedIn" class="div10"><button (click)="authService.SignOut()">Wyloguj</button></div>
+    </div>
+

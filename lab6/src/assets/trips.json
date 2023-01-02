@@ -1,0 +1,104 @@
+{
+    "trips": [
+        {
+            "name": "Śladami Faraona",
+            "destination": "Egipt",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 2345,
+            "capacity": 6,
+            "description": "Staroegipska nazwa kraju oznacza Czarny Ląd i odnosi się do żyznych gruntów wzdłuż Nilu, będących przeciwieństwem sąsiadującej z nimi pustyni, Czerwonego Lądu.",
+            "imageURL": "../assets/images/egipt.jpg"
+        },
+        {
+            "name": "Miejska Dżungla",
+            "destination": "USA",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 12256,
+            "capacity": 7,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/nowyYork.jpg"
+        },
+        {
+            "name": "Kraina kwitnącej wiśni",
+            "destination": "Japonia",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 10234,
+            "capacity": 4,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/japan.jpg"
+        },
+        {
+            "name": "Kraina Lodu",
+            "destination": "Grenlandia",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 23455,
+            "capacity": 12,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/northPole.jpg"
+        },
+        {
+            "name": "Czas na relaks",
+            "destination": "USA",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 12223,
+            "capacity": 11,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/hawaje.jpg"
+        },
+        {
+            "name": "DisnayLand",
+            "destination": "USA",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 28933,
+            "capacity": 19,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/disnayland.jpg"
+        },
+        {
+            "name": "Safari",
+            "destination": "Egipt",
+            "startDate": "2023-01-01",
+            "endDate": "2023-11-30",
+            "price": 23323,
+            "capacity": 15,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/safari.jpg"
+        },
+        {
+            "name": "Wizyta w Paryżu",
+            "destination": "Francja",
+            "startDate": "2023-01-01",
+            "endDate": "2023-02-02",
+            "price": 12450,
+            "capacity": 5,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/paris.jpg"
+        },
+        {
+            "name": "Śladami Rodziny Królewskiej",
+            "destination": "UK",
+            "startDate": "2023-01-23",
+            "endDate": "2023-03-23",
+            "price": 20345,
+            "capacity": 8,
+            "description": "London Eye, ukończone w 1999 r., nazywane również Millennium Wheel – koło obserwacyjne (diabelski młyn) znajdujące się w dzielnicy Lambeth w Londynie, na południowym brzegu Tamizy.",
+            "imageURL": "../assets/images/london.jpg"
+        },
+        {
+            "name": "Odwidziny u prezydenta",
+            "destination": "USA",
+            "startDate": "2023-11-30",
+            "endDate": "2023-12-30",
+            "price": 23450,
+            "capacity": 24,
+            "description": "Oficjalna rezydencja i miejsce pracy prezydentów USA, położona w Waszyngtonie, Dystrykt Kolumbia. Nazwa ta została nadana budynkowi 14 września 1901 r. przez prezydenta Roosevelta",
+            "imageURL": "../assets/images/whiteHouse.jpg"
+        }
+    ]
+}

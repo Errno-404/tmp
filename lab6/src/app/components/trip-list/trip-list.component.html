@@ -1,0 +1,87 @@
+
+
+
+
+<section class="topBar">
+
+    <div class="topBarElement"
+        [ngStyle]="{'background-color' : reservationCount < 10 ? 'lightCoral' : 'rgb(75, 206, 75)'}">Ilość
+        zarezerwowanych wycieczek: {{reservationCount}} </div>
+
+   
+    
+
+
+</section>
+
+
+
+
+<ul>
+    <li *ngFor="let item of trips | async; index as i">
+
+      
+        <div class="trip" [ngClass]="{'mostExpensive': item.price === maxPrice, 'cheapest': item.price === minPrice}">
+
+          
+            <header>
+                <div class="avatar">
+                    <img [src]="item.imageURL">
+                </div>
+
+                <div class="title">
+                    <p>{{item.name | uppercase}}</p>
+                </div>
+            </header>
+
+
+            <section>
+                <p class="titles">Opis wycieczki:</p>
+                <p class="description">{{item.description}}</p>
+                <p><span class="titles">Cena: </span>{{item.price | currency :'USD' }} </p>
+            </section>
+            
+           
+            <footer>
+                <div class="details">
+                    <p> <span class="titles smaller">Kraj:</span> {{item.destination | uppercase}}</p>
+                    <p> <span class="titles smaller">Data wyjazdu: </span>{{item.startDate}}</p>
+                    <p> <span class="titles smaller">Data powrotu: </span>{{item.endDate}}</p>
+                </div>
+
+                <div class="capacity">
+                    <p id="change">{{available[i]}}/{{item.capacity}}</p>
+                </div>
+            </footer>
+
+
+           
+            <div class="cart">
+                <button class="toCart" *ngIf="available[i]>0" (click)="reserve(i)">
+                    <p>Dodaj</p>
+                </button>
+
+               
+                <button class="fromCart" (click)="resign(i)"
+                    [ngStyle]="{'background-color': available[i] < item.capacity ? 'rgb(233, 66, 66)': 'gray'}">
+                    <p>Rezygnuj</p>
+                </button>
+            </div>
+            
+            
+            <div class="available-info"
+                [ngClass]="{'notAvailable' : available[i] === 0, 'lastMinute' : available[i] > 0 && available[i] < 4, 'isAvailable' : available[i] > 3}">
+                {{available[i] > 0 ? 'Dostępne' : 'Niedostępne' }}</div>
+
+
+        
+        </div>
+
+         
+        <button class="delete" (click)="removeTrip(item, i)">
+            <div class="minus"></div>
+        </button>
+
+
+    </li>
+</ul>

@@ -1,0 +1,12 @@
+<div>
+    <mat-form-field appearance="fill">
+        <mat-label>Choose mode</mat-label>
+        <mat-select [(value)]="option">
+            <mat-option value="0">Local</mat-option>
+            <mat-option value="1">None</mat-option>
+            <mat-option value="2">Session</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <button (click)="this.authService.ChangePersistance(option)">Accept</button>
+</div>

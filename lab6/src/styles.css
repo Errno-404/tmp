@@ -1,0 +1,8 @@
+body{
+    padding: 0;
+    background-color: rgb(226, 224, 224);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";

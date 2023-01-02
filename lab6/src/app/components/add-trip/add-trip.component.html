@@ -1,0 +1,119 @@
+<form class="addTripForm" #loginForm="ngForm"  (ngSubmit)="addTrip(loginForm)">
+
+        <div class="formRow">
+            <label>Nazwa wycieczki: </label>
+            <input type="text" name="name" ngModel #name="ngModel" required minlength="4">
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div *ngIf="name.invalid && name.touched" class="invalidInput">
+
+            <span *ngIf="name.errors?.['required']">
+                Nazwa wycieczki jest wymagana!
+            </span>
+            <span *ngIf="name.errors?.['minlength']">
+                Minimalna długość nazwy to: 4 znaki!
+            </span>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="formRow">
+            <label>Kraj: </label>
+            <input type="text" name="destination" ngModel #country="ngModel" required minlength="4">
+        </div>
+
+
+        <div *ngIf="country.invalid && country.touched" class="invalidInput">
+
+            <span *ngIf="country.errors?.['required']">
+                Nazwa kraju jest wymagana!
+            </span>
+            <span *ngIf="country.errors?.['minlength']">
+                Minimalna długość nazwy kraju to: 1 znak!
+            </span>
+
+        </div>
+    
+         <div class="formRow">
+            <label>Data wyjazdu: </label>
+            <input type="date" name="startDate" ngModel #startDate="ngModel" required>
+        </div>
+
+        <div *ngIf="startDate.invalid && startDate.touched" class="invalidInput">
+
+            <span *ngIf="startDate.errors?.['required']">
+                Data jest wymagana
+            </span>
+
+        </div>
+    
+        <div class="formRow">
+            <label>Data powrotu: </label>
+            <input type="date" name="endDate" ngModel #endDate="ngModel" required>
+        </div>
+
+
+        <div *ngIf="endDate.invalid && endDate.touched" class="invalidInput">
+
+            <div *ngIf="endDate.errors?.['required']">
+                Data jest wymagana!
+            </div>
+
+
+        </div>
+    
+        <div class="formRow">
+            <label>Cena: </label>
+            <input type="number" name="price" ngModel>
+        </div>
+
+        <div class="formRow">
+            <label>Ilość: </label>
+            <input type="number" name="capacity" ngModel>
+        </div>
+
+        <div class="formRow">
+            <label>Opis: </label>
+            <textarea  name="description" ngModel maxlength="180" ></textarea></div>
+
+
+        <div class="formRow">
+            <label>Zdjęcie: </label>
+            <input type="text" name="imageURL" ngModel #imageURL="ngModel" required minlength="8"></div>
+
+        <div *ngIf="imageURL.invalid && imageURL.touched" class="invalidInput">
+
+            <span *ngIf="imageURL.errors?.['required']">
+                Ścieżka do pliku jest wymagana!
+            </span>
+            <span *ngIf="imageURL.errors?.['minlength']">
+                Minimalna długość URL to: 8 znaków!
+            </span>
+
+
+        </div>
+        
+        <div class="formRow formSubmit"><button [disabled]="loginForm.invalid">Dodaj</button></div>
+
+</form>
